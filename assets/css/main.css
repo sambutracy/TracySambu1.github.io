@@ -1627,7 +1627,42 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		width: 100%;
+		}
+/* Custom portfolio refresh */
+.tagline {
+	font-weight: 600;
+	font-size: 1.15rem;
+	margin-bottom: 1rem;
+}
+
+.cta-actions {
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.contact-item {
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	padding: 0.75rem;
+}
+
+.standalone-page {
+	max-width: 980px;
+	margin: 3rem auto;
+	padding: 1.5rem;
+}
+
+.standalone-page article {
+	display: block !important;
+	opacity: 1 !important;
+	transform: none !important;
+}
 		max-width: 100%;
 		margin-top: 2rem;
 		text-align: center;
