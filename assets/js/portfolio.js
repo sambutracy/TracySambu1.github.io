@@ -1,9 +1,26 @@
 (function () {
   const root = document.body;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const THEME_KEY = 'theme';
+
+  function readThemeFromStorage() {
+    try {
+      return window.localStorage.getItem(THEME_KEY);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function writeThemeToStorage(value) {
+    try {
+      window.localStorage.setItem(THEME_KEY, value);
+    } catch (error) {
+      // Ignore storage failures (privacy mode, disabled storage, quota, etc.).
+    }
+  }
 
   function initTheme() {
-    const storedTheme = localStorage.getItem('theme');
+    const storedTheme = readThemeFromStorage();
     if (storedTheme === 'light') root.classList.add('light');
 
     const toggle = document.getElementById('theme-toggle');
@@ -12,7 +29,7 @@
     toggle.addEventListener('click', () => {
       root.classList.toggle('light');
       const nextTheme = root.classList.contains('light') ? 'light' : 'dark';
-      localStorage.setItem('theme', nextTheme);
+      writeThemeToStorage(nextTheme);
     });
   }
 
