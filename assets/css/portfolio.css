@@ -1,10 +1,10 @@
 :root {
-  --bg: #070b16;
-  --bg-elev: rgba(12, 20, 41, 0.78);
-  --text: #e8edff;
-  --muted: #a9b5d8;
-  --accent: #62e6ff;
-  --accent-2: #ff6ad5;
+  --bg: #090c14;
+  --bg-elev: rgba(17, 14, 20, 0.8);
+  --text: #f5f6ff;
+  --muted: #c4c7d8;
+  --accent: #ff3b30;
+  --accent-2: #ffd447;
   --panel-border: rgba(255, 255, 255, 0.18);
   --shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
@@ -14,8 +14,8 @@ body.light {
   --bg-elev: rgba(255, 255, 255, 0.86);
   --text: #121826;
   --muted: #3a4868;
-  --accent: #0077ff;
-  --accent-2: #ff4dc4;
+  --accent: #de2418;
+  --accent-2: #ffcc2f;
   --panel-border: rgba(12, 20, 41, 0.15);
   --shadow: 0 18px 34px rgba(21, 37, 69, 0.15);
 }
@@ -26,7 +26,7 @@ body {
   margin: 0;
   font-family: Inter, "Segoe UI", Roboto, sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 78% 10%, #22346f 0, var(--bg) 47%);
+  background: radial-gradient(circle at 82% 4%, #3a0f19 0, var(--bg) 44%);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -73,6 +73,15 @@ body {
   border-bottom: 1px solid var(--panel-border);
   background: rgba(6, 10, 22, 0.62);
   z-index: 20;
+}
+.site-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff3b30 0 25%, #ffd447 25% 50%, #ffffff 50% 75%, #1b1f2b 75% 100%);
 }
 body.light .site-header { background: rgba(255, 255, 255, 0.78); }
 
