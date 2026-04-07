@@ -4,12 +4,12 @@ An immersive personal portfolio designed as a room-based experience rather than 
 
 ## Experience Design
 
-- Full-screen hero with interactive Three.js 3D objects
+- Full-screen hero with interactive Three.js 3D shapes
 - Dark-first visual system with animated light/dark lamp toggle
-- Distinct rooms: About, Projects, Community, Resources, Contact
-- Motion depth: parallax, card tilt, animated overlays
+- Distinct scrollable rooms: About, Projects, Community, Contact
+- Subtle motion depth: parallax layer, card tilt, animated overlays
 - Keyboard-friendly room navigation (Arrow/Page keys)
-- Project mini-case pages using problem/approach/impact framing
+- Project mini-case pages with problem/approach/impact framing
 
 ## Structure
 
