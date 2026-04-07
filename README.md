@@ -1,21 +1,26 @@
 # Tracy Sambu Portfolio
 
-A story-driven developer portfolio focused on narrative, proof of impact, and engineering signals.
+A redesigned portfolio focused on visual impact, narrative clarity, and recruiter-friendly flow.
+
+## Highlights
+
+- Interactive 3D hero built with Three.js (rotating icosahedron)
+- Sticky modern navigation with smooth section links
+- Dark/light mode lamp toggle in the lower-right corner
+- Responsive featured-project cards with case study links
+- Minimal About and Contact sections for faster scanning
 
 ## Structure
 
-- `index.html` — landing page with profile narrative and section previews
-- `sections/` — deep-dives for about, projects, experience, community, and writing
+- `index.html` — main landing page
+- `assets/css/portfolio.css` — portfolio styles and theme system
+- `assets/js/portfolio.js` — theme toggle + Three.js hero animation
 - `projects/` — project case-study pages
-- `writing/` — short articles on engineering thinking
-- `assets/` — styles, scripts, and supporting static files
+- `sections/` and `writing/` — supporting content pages
 
-## Tech
+## Stack
 
 - HTML5
-- CSS3 (HTML5 UP Dimension theme base + custom content)
-- Vanilla JavaScript utilities from template
-
-## Goal
-
-Showcase multi-domain execution across AI, Web3, full-stack software, and community-driven product work in a way that is memorable to recruiters and hiring managers.
+- CSS3
+- JavaScript
+- Three.js
